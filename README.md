@@ -1,6 +1,14 @@
 # Flack
 Flack is a chatting app created using Flask where the user just needs to login with their username and can chat on any channel which is created on the server. This application uses Flask-SocketIO which gives Flask applications access to low latency bi-directional communications between the clients and the server. In this application, the user can view messages already sent on that channel, can send his own message, and can drop any message sent by him.
 
+### To run this application
+In the Terminal,
+1. `pip3 install -r requirements.txt` 
+
+2. `export FLASK_APP=app.py`
+
+3. `flask run`
+
 ### Login
 This page asks username which is used with the message sent by the user. This page is loaded if the user ever logs out.
 ![alt text](https://github.com/Sunit130/Flack/blob/master/demo/Screenshot%20(66).png)
