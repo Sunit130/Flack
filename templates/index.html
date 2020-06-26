@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flack</title>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+        <script type="text/javascript" src="../static/index.js"></script>
+        <link rel="stylesheet" href="../static/stylesheet.css">
+    </head>
+    <body>
+        <h1>Flack</h1>
+
+        <div class="logout">
+            <button id="logout" onclick="window.location.href='{{ url_for( 'logout') }}';">Logout</button>
+        </div>
+        <div class="container">
+            <div class="div_channels">
+                <div class="channel_input">
+                    <input type="text" id="channel_name">
+                    <button type="button" id="create_channel">Add</button>
+                </div>
+                <div class="all_channels" >
+                    <div class="center_all_channels">
+                        <p style="margin-left:5px;">Available Channels : </p>
+                        <ul id="channels">
+                            {% for e in channels %}
+                                <li> <a href="/channel/{{e}}">{{e}}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="div_messages">
+                <div class="current_channel">
+                </div>
+                <div class="all_messages">
+                    <ul id="messages">
+                    </ul>
+                </div>
+
+                <div class="message_input">
+                    <input type="text" disabled="true" id="message">
+                    <button type="submit" disabled="true" id="send_message">Send</button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </body>
+</html>
