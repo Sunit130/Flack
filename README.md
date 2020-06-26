@@ -1,5 +1,5 @@
 # Flack
-Flack is chatting app created using Flask in which the user just needs to login with their username and can chat on any channel which is created on the server. This application uses Flask-SocketIO which gives Flask applications access to low latency bi-directional communications between the clients and the server. In this applicaion user can view messages already sent on that channel, can send his own message and can delete any message sent by him.
+Flack is a chatting app created using Flask where the user just needs to login with their username and can chat on any channel which is created on the server. This application uses Flask-SocketIO which gives Flask applications access to low latency bi-directional communications between the clients and the server. In this application, the user can view messages already sent on that channel, can send his own message, and can drop any message sent by him.
 
 ### Login
 This page asks username which is used with the message sent by the user. This page is loaded if the user ever logs out.
